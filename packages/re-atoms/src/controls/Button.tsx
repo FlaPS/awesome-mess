@@ -1,5 +1,5 @@
 import * as React from 'react'
-import MUIButton from 'material-ui/Button'
+import {default as MUIButton} from 'material-ui/Button'
 import {withStyles} from 'material-ui/styles'
 import {defaultProps} from 'recompose'
 import {colors} from '../styles'

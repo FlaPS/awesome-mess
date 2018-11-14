@@ -1,8 +1,10 @@
 One of the previos projects.  Some features are removed from build
 
-Frontend code is here
+WebUI code is here
 ```packages/re-atoms/src```  
 
+You can start investigate the structure from here
+```packages/re-atoms/src/app/nav```
 
 material-ui styles are broken in some cases.
 
@@ -13,16 +15,20 @@ material-ui styles are broken in some cases.
     lerna bootstrap
     lerna run watch --parallel
 ```
-#####  Master server #####
+Be careful, initial installation & build could occupy a lot of time.
+And the last script ```watch``` will never stop, so keep an eye on console
+
+###  Master server ###
 Wait while ```watch``` complete the job. Do not turn if of after. 
 Open new terminal window
-To start-up master server
+to start-up master server
 ```
     cd packages/service-actor
     npm start
 ```
 check configs and logs of the "in memory" actors here:
-```/Users/rigspace/slave1/config/```
+```/Users//YourName/rigspace/slave1/config/```
+(in case of Linux... i don't remember the default app data path)
 
 Change MySQL settings in json files if needed, and restart server in case of changes
 Seed variable means the amout of seeded items for tests
@@ -30,10 +36,10 @@ Seed variable means the amout of seeded items for tests
 You can watch for a complete logs here:
 ```/Users/rigspace/slave1/log```
  
-#####  frontend #####
+###  frontend  ###
 
 ```
-    cd packages/re-atomr
+    cd packages/re-atoms/
     npm start
 ```
 Open suggested URL and type the address of the backend (same host by default, but port is 8000), or visit backend initial route

@@ -13,6 +13,8 @@ import {findRouteMatch} from './navHelpers'
 import {flatten, omit, values} from 'ramda'
 import accessNav from '../chapters/access/accessNav'
 import wellsNav from '../chapters/chapteWells/wellsNav'
+import jobNav from '../chapters/jobs/'
+import reportNav from '../chapters/reports/'
 
 const auth = {
     index: {
@@ -77,9 +79,10 @@ const app = {
     chapterDrillRigs,
     /*
     anniversary,
-    jobs: jobRoutes,
-    reports: reportRoutes,
     */
+    jobs: jobNav,
+    reports: reportNav,
+
 }
 
 

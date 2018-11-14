@@ -71,7 +71,7 @@ export default (props: BlankPageProps) =>
         {props.icon}
         <Label>{props.label}</Label>
         <ButtonContainer>
-            <AddButton fab primary onClick={props.onAddClick}>
+            <AddButton  variant='fab' primary onClick={props.onAddClick}>
                 <Library.Add/>
             </AddButton>
             <SubLabel>{props.subLabel}</SubLabel>

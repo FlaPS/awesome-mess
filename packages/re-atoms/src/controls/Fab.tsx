@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Button, {ButtonProps} from './Button'
+import Button, {ButtonProps } from './Button'
 import styled from 'styled-components'
 import {Div} from '../layout'
 import {colors} from '../styles'
@@ -21,9 +21,9 @@ type FabProps = ButtonProps & { children?: React.ReactNode } & {
 export default ({staticPosition, ...props}: FabProps) =>
     staticPosition
         ? (
-            <Button style={staticButtonStyle} fab {...props} primary/>
+            <Button style={staticButtonStyle}  variant='fab'  {...props} primary/>
         ) : (
             <FloatDiv>
-                <Button fab {...props} primary/>
+                <Button  variant='fab' {...props} primary/>
             </FloatDiv>
         )

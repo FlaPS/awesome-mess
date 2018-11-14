@@ -24,6 +24,7 @@
     "lerna:clean": "lerna clean",
     "lerna:autoclean": "lerna clean --yes",
     "frontend": "cd packages/re-atoms/ && npm start",
+    "all": "npm run backend && npm run frontend",
     "lint": "tslint -c tslint.json 'packages/**/src/**/*.{ts,tsx}' -e '**/*.d.ts' -e '**/node_modules/**'",
     "lint:css": "stylelint -w packages/**/src/**/*.tsx",
     "storybook": "cd packages/re-atoms/ && npm run storybook",
