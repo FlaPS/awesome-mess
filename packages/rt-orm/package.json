@@ -1,0 +1,54 @@
+{
+  "name": "@local/rt-orm",
+  "version": "0.0.3",
+  "description": "orm for rig today project",
+  "main": "dist/index.js",
+  "typings": "src",
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "jest --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.6",
+    "jest": "^21.2.1",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "ts-jest": "^21.2.3",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "dependencies": {
+    "@local/biz": "^0.0.21",
+    "@local/config": "^0.0.4",
+    "@local/fsa": "^0.0.22",
+    "@local/logger": "^0.0.20",
+    "@local/root": "^0.0.6",
+    "@local/utils": "^0.0.20",
+    "@types/knex": "^0.0.65",
+    "knex": "^0.13.0",
+    "moment": "^2.19.1",
+    "mysql": "^2.15.0",
+    "objection": "^0.9.0",
+    "ramda": "^0.25.0",
+    "to-snake-case": "^1.0.0"
+  }
+}

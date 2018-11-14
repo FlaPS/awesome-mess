@@ -1,0 +1,19 @@
+{
+  "name": "@local/signal",
+  "version": "0.0.18",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@local/utils": "^0.0.20"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.8"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

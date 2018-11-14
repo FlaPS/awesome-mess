@@ -1,0 +1,26 @@
+{
+  "name": "@local/actors",
+  "version": "0.0.32",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@local/cli": "^0.0.5",
+    "@local/config": "^0.0.4",
+    "@local/file-data": "^0.0.29",
+    "@local/free-port": "^0.0.27",
+    "@local/fsa": "^0.0.22",
+    "@local/logger": "^0.0.20",
+    "@local/signal": "^0.0.18",
+    "@local/utils": "^0.0.20",
+    "redux": "^3.7.2",
+    "redux-saga": "^1.0.0-beta.0",
+    "shortid": "^2.2.8"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

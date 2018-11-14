@@ -1,0 +1,24 @@
+{
+  "name": "@local/logger",
+  "version": "0.0.20",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "devDependencies": {
+    "@types/node": "^8.5.8"
+  },
+  "dependencies": {
+    "@local/config": "^0.0.4",
+    "@local/file-data": "^0.0.29",
+    "@local/signal": "^0.0.18",
+    "@local/utils": "^0.0.20",
+    "ramda": "^0.24.1",
+    "winston": "^2.4.0"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

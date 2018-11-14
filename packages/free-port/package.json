@@ -1,0 +1,16 @@
+{
+  "name": "@local/free-port",
+  "version": "0.0.27",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "devDependencies": {
+    "@types/node": "^8.5.8"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

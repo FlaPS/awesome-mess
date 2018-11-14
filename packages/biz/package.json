@@ -1,0 +1,59 @@
+{
+  "name": "@local/biz",
+  "version": "0.0.21",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@local/fsa": "^0.0.22",
+    "@local/random": "^0.0.2",
+    "@local/root": "^0.0.6",
+    "@local/utils": ">=0.0.1",
+    "@types/faker": "^4.1.1",
+    "@types/node": "^8.5.8",
+    "faker": "^4.1.0",
+    "fp-ts": "^0.5.4",
+    "io-ts": "^0.9.1",
+    "logging-ts": "0.0.1",
+    "moize": "^4.0.4",
+    "moment": "^2.19.1",
+    "monocle-ts": "^0.4.4",
+    "newtype-ts": "^0.1.0",
+    "parser-ts": "^0.4.0",
+    "ramda": "^0.24.1",
+    "redux": "^3.7.2",
+    "reselect": "3.0.1",
+    "typelevel-ts": "^0.2.2",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4"
+  }
+}

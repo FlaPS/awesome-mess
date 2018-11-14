@@ -1,0 +1,11 @@
+**/node_modules
+**/.vscode
+**/.idea
+
+packages/**/dist
+packages/**/lib
+
+**/npm-debug.log
+**/package-lock.json
+lerna-debug.log
+git

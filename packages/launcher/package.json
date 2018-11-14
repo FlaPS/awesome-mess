@@ -1,0 +1,25 @@
+{
+  "name": "@local/launcher",
+  "version": "0.0.20",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "devDependencies": {
+    "@types/node": "^8.5.8"
+  },
+  "dependencies": {
+    "@local/actors": "^0.0.32",
+    "@local/file-data": "^0.0.29",
+    "@local/free-port": "^0.0.27",
+    "@local/fsa": "^0.0.22",
+    "@local/utils": "^0.0.20",
+    "ramda": "^0.24.1",
+    "redux-saga": "^1.0.0-beta.0"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

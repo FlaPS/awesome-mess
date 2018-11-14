@@ -1,0 +1,84 @@
+{
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "jest-environment-node-debug": "^2.0.0",
+    "ts-jest": "^21.2.4",
+    "@types/node": "^7.0.43",
+    "chalk": "^2.3.0",
+    "lerna": "^2.5.1",
+    "rimraf": "^2.6.2",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.2.0",
+    "ts-lint": "^4.5.1",
+    "tslint": "^5.4.3",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "backend": "cd packages/service-actor/ && npm start",
+    "package-update": "node scripts/updatePackage",
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:clean": "lerna clean",
+    "lerna:autoclean": "lerna clean --yes",
+    "frontend": "cd packages/re-atoms/ && npm start",
+    "lint": "tslint -c tslint.json 'packages/**/src/**/*.{ts,tsx}' -e '**/*.d.ts' -e '**/node_modules/**'",
+    "lint:css": "stylelint -w packages/**/src/**/*.tsx",
+    "storybook": "cd packages/re-atoms/ && npm run storybook",
+    "lerna:watch": "lerna run --parallel watch",
+    "lerna:test": "lerna run --parallel test",
+    "clear:dist": "node scripts/clear",
+    "rt-orm:test": "cd packages/rt-orm && npm test",
+    "lint:config": "tslint -c tslint.json 'packages/config/src/**/*.{ts,tsx}' -e '**/*.d.ts' -e '**/node_modules/**'",
+    "test:config": "cd packages/config && npm test",
+    "lint:file-data": "tslint -c tslint.json 'packages/file-data/src/**/*.{ts,tsx}' -e '**/*.d.ts' -e '**/node_modules/**'",
+    "test:file-data": "cd packages/file-data && npm test",
+    "lint:rt-orm": "tslint -c tslint.json 'packages/rt-orm/src/**/*.{ts,tsx}' -e '**/*.d.ts' -e '**/node_modules/**'",
+    "test:rt-orm": "cd packages/rt-orm && npm test",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/faker": "^4.1.1",
+    "@types/ip": "0.0.30",
+    "@types/react": "^16.0.26",
+    "faker": "^4.1.0",
+    "fp-ts": "^0.5.2",
+    "g": "^2.0.1",
+    "generate-password": "^1.3.0",
+    "ip": "^1.1.5",
+    "monocle-ts": "^0.4.4",
+    "npm-graph": "^0.5.0",
+    "ramda": "^0.24.1",
+    "redux": "^3.7.2",
+    "redux-saga": "^1.0.0-beta.0",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.3.3",
+    "typescript": "^2.6.2",
+    "verdaccio": "^2.5.1"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "roots": [
+      "test"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}

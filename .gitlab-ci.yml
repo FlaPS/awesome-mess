@@ -1,0 +1,78 @@
+image: node:carbon
+
+cache:
+  untracked: true
+
+stages:
+  - build
+  - lint
+  - test
+
+build:
+  only:
+    - master
+  stage: build
+  script:
+    - npm set registry http://192.168.0.216:4873
+    - npm run clear:dist
+    - npm run lerna:autoclean
+    - npm install
+    - npm run lerna:bootstrap
+
+lint-config:
+  only:
+    - master
+  stage: lint
+  script:
+    - npm run lint:config
+
+lint-filedata:
+  only:
+    - master
+  stage: lint
+  script:
+    - npm run lint:file-data
+
+lint-rtorm:
+  only:
+    - master
+  stage: lint
+  script:
+    - npm run lint:rt-orm
+
+#stylelint:
+#  before_script:
+#    - npm set registry http://192.168.0.216:4873
+#    - npm install
+#    - npm run lerna:bootstrap
+#  script:
+#    - npm run lint:css
+
+test-config:
+  only:
+    - master
+  stage: test
+  script:
+    - npm run test:config
+
+test-filedata:
+  only:
+    - master
+  stage: test
+  script:
+    - npm run test:file-data
+
+test-rtorm:
+  only:
+    - master
+  stage: test
+  variables:
+    MYSQL_DATABASE: rt_orm_test
+    MYSQL_ROOT_PASSWORD: root
+  services:
+    - mysql
+  before_script:
+    - apt-get -qq update && apt-get -qqy --no-install-recommends install mysql-client
+    - mysql --version
+  script:
+    - NODE_ENV=test_docker npm run test:rt-orm

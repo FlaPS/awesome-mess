@@ -1,0 +1,43 @@
+{
+  "name": "@local/file-data",
+  "version": "0.0.29",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "typings": "src",
+  "dependencies": {
+    "@local/cli": "^0.0.5",
+    "@local/signal": "^0.0.18",
+    "jest": "^21.2.1",
+    "ramda": "^0.24.1",
+    "require-main-filename": "^1.0.1",
+    "ts-jest": "^21.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.8"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "jest --forceExit"
+  }
+}

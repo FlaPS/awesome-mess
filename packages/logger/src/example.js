@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {value: true});
+var index_1 = require("./index");
+var logger = index_1.getLogger('other');
+logger.debug('default logger debug examples aftertsc');
+logger.log('default logger log');
+logger.info('default logger info');
+logger.warn('default logger warn');
+logger.error('default logger error');
+logger = index_1.getLogger('default');
+logger.debug('default logger debug');
+logger.log('default logger log');
+logger.info('default logger info 56676 5');
+logger.warn('default logger warn');
+logger.error('default logger error');

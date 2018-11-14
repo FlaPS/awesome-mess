@@ -1,0 +1,24 @@
+{
+  "name": "@local/client-store",
+  "version": "0.0.6",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@local/isomorphic": ">=0.0.1",
+    "@local/utils": ">=0.0.1",
+    "@local/biz": "^0.0.21",
+    "@local/fsa": "^0.0.22",
+    "@local/logger": "^0.0.20",
+    "moment": "^2.20.1",
+    "redux": "^3.7.2",
+    "redux-saga": "^1.0.0-beta.0",
+    "shortid": "^2.2.8"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "@local/service-actor",
+  "version": "0.0.5",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@local/biz": "^0.0.21",
+    "@local/cli": "^0.0.5",
+    "@local/config": "^0.0.4",
+    "@local/file-data": "^0.0.29",
+    "@local/free-port": "^0.0.27",
+    "@local/fsa": "^0.0.22",
+    "@local/isomorphic": "^0.0.3",
+    "@local/logger": "^0.0.20",
+    "@local/random": "^0.0.2",
+    "@local/root": "^0.0.6",
+    "@local/rt-orm": "^0.0.3",
+    "@local/signal": "^0.0.18",
+    "@local/utils": "^0.0.20",
+    "@types/knex": "^0.0.65",
+    "@types/koa": "^2.0.39",
+    "@types/koa-router": "7.0.23",
+    "@types/reselect": "2.2.0",
+    "ajv": "^5.3.0",
+    "axios": "^0.17.0",
+    "bytes": "^3.0.0",
+    "chalk": "^2.3.0",
+    "compressible": "^2.0.12",
+    "core-decorators": "^0.20.0",
+    "history": "^4.7.2",
+    "ip": "^1.1.5",
+    "knex": "^0.13.0",
+    "koa": "^2.3.0",
+    "koa-better-body": "3.0.4",
+    "koa-cors": "0.0.16",
+    "koa-is-json": "^1.0.0",
+    "koa-router": "^7.2.1",
+    "koa-socket": "^4.4.0",
+    "koa-static": "^4.0.1",
+    "koa-websocket": "4.0.0",
+    "md5": "^2.2.1",
+    "moment": "^2.19.1",
+    "monocle-ts": "^0.4.4",
+    "mysql": "^2.15.0",
+    "node-uuid": "^1.4.8",
+    "ramda": "^0.25.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^1.0.0-beta.0",
+    "reflect-metadata": "^0.1.10",
+    "remote-redux-devtools": "^0.5.12",
+    "reselect": "3.0.1",
+    "shortid": "^2.2.8",
+    "statuses": "^1.4.0",
+    "stream": "0.0.2",
+    "ts-node-dev": "^1.0.0-pre.30",
+    "typelevel-ts": "^0.2.0",
+    "typescript": "^3.1.6",
+    "ws": "^3.2.0",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "./node_modules/.bin/ts-node-dev  --transpileOnly --respawn  ./src/index.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4",
+    "@types/supertest": "^2.0.4",
+    "supertest": "^3.0.0"
+  }
+}

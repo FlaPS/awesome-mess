@@ -1,0 +1,13 @@
+{
+  "name": "@local/utils",
+  "version": "0.0.20",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}
