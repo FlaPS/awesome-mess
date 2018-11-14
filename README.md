@@ -1,11 +1,11 @@
-If you are interested in front end check for
- 
+One of the previos projects.  Some features are removed from build
+
+Frontend code is here
 ```packages/re-atoms/src```  
 
 
 material-ui styles are broken in some cases.
 
-Some features are removed from build
 
 # Init #
 ```
@@ -36,10 +36,12 @@ You can watch for a complete logs here:
     cd packages/re-atomr
     npm start
 ```
-
+Open suggested URL and type the address of the backend (same host by default, but port is 8000), or visit backend initial route
 
 ### Run storybook ###
 ```
     cd packages/re-atomr
     npm run storybook
 ```
+Some components might not work without redux state mocks
+

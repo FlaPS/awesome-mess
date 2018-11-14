@@ -230,7 +230,7 @@ export const seedBiz = (store: Store<{ biz: BizState }>, config: typeof defaultS
             // @ts-ignore
             {
                 login: 'admin',
-                organization: 'Tetra$oft',
+                organization: '$oft',
                 firstName: faker.name.firstName(),
                 patrName: faker.name.firstName(),
                 lastName: faker.name.lastName(),

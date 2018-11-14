@@ -138,7 +138,7 @@ const ServicePageLayout = (props: ServicePageLayoutProps) =>
             <ChildrenDiv>{props.children}</ChildrenDiv>
             </Body>
         </BodyDiv>
-        <CredentialsBar>ООО «Тетрасофт» © 2017</CredentialsBar>
+        <CredentialsBar>ООО «Боже какой мужчина» © 2016</CredentialsBar>
     </Layout>
 
 const mapStateToProps = (state: FrontState) => ({
